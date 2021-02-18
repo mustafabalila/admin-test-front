@@ -53,7 +53,7 @@ export const signup = (authData) => async (dispatch) => {
 };
 
 function init(token) {
-  axios.defaults.baseURL = "http://localhost:3000/api/v1";
+  axios.defaults.baseURL = "http://localhost:8000/api/v1";
   if (token) {
     axios.defaults.headers["Authorization"] = `Bearer ${token}`;
   }
